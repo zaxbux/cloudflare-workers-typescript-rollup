@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"outDir": "dist/worker",
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"noEmitOnError": true,
+		"lib": [
+			"ESNext",
+			"WebWorker"
+		],
+		"types": ["@cloudflare/workers-types"],
+		"strict": true,
+		"esModuleInterop": false,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"external": ["tslib"],
+	"include": [
+		"./src/**/*.ts"
+	]
+}
